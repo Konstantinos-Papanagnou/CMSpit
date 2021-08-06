@@ -125,7 +125,7 @@ We can get skidy's email either using the metasploit module or just simply log i
 skidy@tryhackme.fakemail
 
 ## What is the web flag?
-I managed to log in with admin:admin that i generated earlier. Now we need to do some recconansence to find the web flag.
+I managed to log in with admin:admin that i generated earlier. Now we need to do some reconnaissance to find the web flag.
 In the finder menu we can view the file system. There is a webflag.php file that contains the flag.
 $flag = "thm{f158bea70731c48b05657a02aaf955626d78e9fb}";
 
