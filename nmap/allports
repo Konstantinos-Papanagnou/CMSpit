@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Fri Aug  6 07:48:04 2021 as: nmap -sS -sV -sC -p- -oN nmap/allports 10.10.240.11
+Nmap scan report for 10.10.240.11 (10.10.240.11)
+Host is up (0.10s latency).
+Not shown: 65533 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 7f:25:f9:40:23:25:cd:29:8b:28:a9:d9:82:f5:49:e4 (RSA)
+|   256 0a:f4:29:ed:55:43:19:e7:73:a7:09:79:30:a8:49:1b (ECDSA)
+|_  256 2f:43:ad:a3:d1:5b:64:86:33:07:5d:94:f9:dc:a4:01 (ED25519)
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-title: Authenticate Please!
+|_Requested resource was /auth/login?to=/
+|_http-trane-info: Problem with XML parsing of /evox/about
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug  6 08:00:09 2021 -- 1 IP address (1 host up) scanned in 724.73 seconds
